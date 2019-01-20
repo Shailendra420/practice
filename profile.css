@@ -1,0 +1,13 @@
+.profileImage, .user-profile {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #512DA8;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  margin: 20px 0;
+}
+ul#d-members {
+    padding-left: 0;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>z-index</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="profile.css">
+  </head>
+  <body>
+
+<!-- Include the above in your HEAD tag -->
+
+      <div class="text-center"><h2>Bootstrap 4 Multilevel Dropdown Menu</h2></div>
+
+      <div id="menu_area" class="menu-area">
+          <div class="container">
+              <div class="row">
+                  <nav class="navbar navbar-light navbar-expand-lg mainmenu">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav mr-auto">
+                              <!-- <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                              <li><a href="#">Link</a></li> -->
+                              <li class="dropdown">
+                                  <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <li>
+                                    <!-- <a href="#"> -->
+                                      <div class="card">
+                                          <div class="card-header d-flex align-items-center">
+                                              <div class="">
+                                                  <img class="user-profile" src="img/user-dummy.png" alt="">
+                                                  <img class="user-profile on-top" src="img/user-dummy.png" alt="">
+                                              </div>
+                                              <div class="text-white">
+                                                  <h6 class="ml-2 mb-0">3 Users</h6>
+                                              </div>
+                                              <div class="ml-auto close-btn" id="close-dropdown">
+                                                  <img class="text-right" src="img/close.svg" alt="">
+                                              </div>
+                                          </div>
+                                          <div class="card-body">
+                                              <form action="" class="">
+                                                  <input type="text" class="add-user-input" name="add-user" id="add-user" placeholder="Add User">
+                                                  <span class=""><img class="add-user-img" src="img/add-user.png" alt=""></span>
+                                              </form>
+
+                                              <ul class="my-3" id="d-members">
+                                                  <li class="d-flex align-items-center my-1">
+                                                      <div class="mem-img flex-column">
+                                                          <img class="user-profile" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe-UKr9eiqA4OgSuvY5aaYO5NJDvJA05CvCaU5B_xF2gxZHnQJQA" alt="">
+                                                      </div>
+                                                      <div class="text-black">
+                                                          <p class="ml-2 mb-0 profile-name">Stephen Dickens</p>
+                                                      </div>
+                                                      <div class="dropdown ml-auto">
+                                                          <a class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                              Edit
+                                                          </a>
+                                                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                              <a class="dropdown-item" href="#">Action</a>
+                                                              <a class="dropdown-item" href="#">Another action</a>
+                                                              <a class="dropdown-item" href="#">Something else here</a>
+                                                          </div>
+                                                      </div>
+                                                  </li>
+                                                  <li class="d-flex align-items-center my-1">
+                                                      <div class="mem-img">
+                                                          <img class="user-profile" src="" alt="">
+                                                      </div>
+                                                      <div class="text-black">
+                                                          <p class="ml-2 mb-0 profile-name">Mayank Jain</p>
+                                                      </div>
+                                                      <div class="dropdown ml-auto">
+                                                          <a class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                              Edit
+                                                          </a>
+                                                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                              <a class="dropdown-item" href="#">Action</a>
+                                                              <a class="dropdown-item" href="#">Another action</a>
+                                                              <a class="dropdown-item" href="#">Something else here</a>
+                                                          </div>
+                                                      </div>
+                                                  </li>
+                                                  <li class="d-flex align-items-center my-1">
+                                                      <div class="mem-img">
+                                                          <img class="user-profile" src="" alt="">
+                                                      </div>
+                                                      <div class="text-black">
+                                                          <p class="ml-2 mb-0 profile-name">Tushar Krishnan</p>
+                                                      </div>
+                                                      <div class="dropdown ml-auto">
+                                                          <a class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                              Edit
+                                                          </a>
+                                                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                              <a class="dropdown-item" href="#">Action</a>
+                                                              <a class="dropdown-item" href="#">Another action</a>
+                                                              <a class="dropdown-item" href="#">Something else here</a>
+                                                          </div>
+                                                      </div>
+                                                  </li>
+                                                  <button id="noaction" class="btn btn-primary" type="button" name="button">Clik it</button>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                                    <!-- </a> -->
+                                  </li>
+                                  <!-- <li><a href="#">Another action</a></li>
+                                  <li><a href="#">Something else here</a></li>
+                                  <li class="dropdown">
+                                      <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown2</a>
+                                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <li><a href="#">Action</a></li>
+                                      <li><a href="#">Another action</a></li>
+                                      <li><a href="#">Something else here</a></li>
+                                      <li class="dropdown">
+                                          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown3</a>
+                                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                              <li><a href="#">Action</a></li>
+                                              <li><a href="#">Another action</a></li>
+                                              <li><a href="#">Something else here</a></li>
+                                          </ul>
+                                      </li>
+                                      </ul>
+                                  </li> -->
+                                  </ul>
+                              </li>
+                              <!-- <li><a href="#">Service</a></li> -->
+                          </ul>
+                      </div>
+                  </nav>
+              </div>
+          </div>
+      </div>
+
+   <script src="jquery.js"></script>
+   <script src="bootstrap.js"></script>
+   <script src="test.js"></script>
+  </body>
+</html>
